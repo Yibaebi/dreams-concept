@@ -1,9 +1,15 @@
 html,
 body {
+  font-size: 16px;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+:root {
+  --nav-padding: 28px 113px 28px 113px;
+  --primary-color: #ee0e43;
+  --color-black: #000;
+  --footer-bg-color: #1e1e1e;
 }
 
 a {
@@ -13,4 +19,26 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+hgroup {
+  margin-top: 1.1875em;
+}
+
+/* White Color Styles */
+.drm-text-white {
+  color: white;
+}
+
+.drm-bg-white {
+  background-color: #000;
+}
+
+/* White Color Styles */
+.drm-text-black {
+  color: white;
+}
+
+.drm-bg-black {
+  background-color: #000;
 }
