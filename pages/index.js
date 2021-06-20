@@ -37,6 +37,7 @@ export default function Home() {
       </Head>
       <HeroSection />
       <ServiceSection />
+      <AboutUs />
       <RecentProjects />
       <Businesses />
     </div>
