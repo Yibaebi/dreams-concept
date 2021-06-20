@@ -1,14 +1,13 @@
 .container {
-  margin: 0 auto;
-  max-width: 1500px;
-  padding: var(--nav-padding);
+  z-index: 100;
+  padding: var(--container-padding) !important;
   top: 0px;
   transition: all 0.3s ease-in-out;
-  background: transparent;
+  background-color: transparent !important;
 }
 
 .container__white {
-  background-color: var(--color-white);
+  background-color: var(--color-white) !important;
 }
 
 .container__white .link__item a {
@@ -41,6 +40,7 @@
   font-weight: 450;
 }
 
-.active__link a {
+.active__link a,
+.active__link a:hover {
   font-weight: 700;
 }

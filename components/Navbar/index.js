@@ -8,7 +8,7 @@ import WhiteLogoVariant from "../../public/images/white-logo-variant.svg";
 import navStyles from "../../styles/Navbar.module.css";
 
 const Navbar = () => {
-  const [activeHash, setActiveHash] = useState("#home");
+  const [activeHash, setActiveHash] = useState("");
   const [changeNavbar, setChangeNavbar] = useState(false);
   const router = useRouter();
 
@@ -25,6 +25,10 @@ const Navbar = () => {
     }
   };
 
+  const activeTab = (hash) => {
+    return activeHash.replace("/", "") === hash;
+  };
+
   return (
     <nav
       className={`${navStyles.container} ${
@@ -37,7 +41,7 @@ const Navbar = () => {
       <ul className={`${navStyles.links__container}`}>
         <li
           className={`${navStyles.link__item} ${
-            activeHash.includes("#home") && navStyles.active__link
+            (activeTab("#home") || activeTab("")) && navStyles.active__link
           }`}
         >
           <Link href="#home">
@@ -46,7 +50,7 @@ const Navbar = () => {
         </li>
         <li
           className={`${navStyles.link__item} ${
-            activeHash.includes("#about") && navStyles.active__link
+            activeTab("#about") && navStyles.active__link
           }`}
         >
           <Link href="#about">
@@ -55,7 +59,7 @@ const Navbar = () => {
         </li>
         <li
           className={`${navStyles.link__item} ${
-            activeHash.includes("#services") && navStyles.active__link
+            activeTab("#services") && navStyles.active__link
           }`}
         >
           <Link href="#services">
@@ -64,7 +68,7 @@ const Navbar = () => {
         </li>
         <li
           className={`${navStyles.link__item} ${
-            activeHash.includes("#businesses") && navStyles.active__link
+            activeTab("#businesses") && navStyles.active__link
           }`}
         >
           <Link href="#businesses">
@@ -73,7 +77,7 @@ const Navbar = () => {
         </li>
         <li
           className={`${navStyles.link__item} ${
-            activeHash.includes("#contact") && navStyles.active__link
+            activeTab("#contact") && navStyles.active__link
           }`}
         >
           <Link href="#contact">
@@ -85,4 +89,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export { Navbar };

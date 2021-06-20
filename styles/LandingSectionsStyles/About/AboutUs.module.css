@@ -1,0 +1,47 @@
+.aboutUs {
+  height: 90vh;
+  /* width: 100%; */
+  background-color: aquamarine;
+  background: url("../../../public//images/LandingPage/aboutus.png") no-repeat
+    center;
+  background-size: cover;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.aboutInner {
+  height: 80%;
+  width: 40%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  /* width: 80%; */
+}
+
+.innerWrapper{
+  width: 80%;
+  height: 90%;
+  /* border: 1px solid green; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+
+.summary {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 131.69%;
+  /* margin: 40px 0px; */
+}

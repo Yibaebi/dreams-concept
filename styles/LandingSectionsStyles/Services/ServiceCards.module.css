@@ -1,0 +1,32 @@
+.main_container {
+  background: #f3f3f3;
+  height: 303px;
+  width: 303px;
+  display: flex;
+  padding: 54px 44px;
+  padding-right: 0px;
+}
+
+.content_wrapper {
+  padding-right: 20px;
+  border-right: 2px solid #e2e2e2;
+}
+.main_container:nth-of-type(3) .content_wrapper {
+  border: none;
+}
+
+.content_wrapper h3,
+.content_wrapper p {
+  width: 230px;
+  font-size: 16px;
+  line-height: 128.69%;
+  font-weight: 600;
+  margin-top: 22px;
+  margin-bottom: 19px;
+}
+
+.content_wrapper p {
+  width: 216px;
+  font-size: 14px;
+  font-weight: 400;
+}

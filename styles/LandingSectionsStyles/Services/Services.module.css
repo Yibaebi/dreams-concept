@@ -1,0 +1,34 @@
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--container-padding) !important;
+  padding: 0px 114px;
+  margin: 50px 0px;
+}
+
+.intro_card {
+  background: linear-gradient(153.43deg, #970326 1.38%, #ee0e43 83.33%);
+  height: 303px;
+  width: 303px;
+  display: flex;
+  flex-direction: column;
+  padding: 54px 44px;
+  padding-top: 115px;
+}
+
+.intro_card h3 {
+  width: 216px;
+  font-size: 22px;
+  line-height: 128.69%;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.intro_card span {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro_card span:hover {
+  padding-left: 10px;
+}

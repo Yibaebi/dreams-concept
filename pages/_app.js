@@ -1,11 +1,16 @@
-import Layout from "../components/Layout";
+import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { Layout } from "../components";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <AnimatePresence>
+      <AnimateSharedLayout>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </AnimateSharedLayout>
+    </AnimatePresence>
   );
 }
 
