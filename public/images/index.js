@@ -105,3 +105,4 @@ const whiteLogoVariant = () => {
 };
 
 export { primaryLogo, whiteLogoVariant };
+export * from "./LandingPage/index";
