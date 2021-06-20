@@ -3,21 +3,35 @@ body {
   font-size: 16px;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-  --nav-padding: 28px 113px 28px 113px;
+  --container-padding: 28px 113px 28px 113px;
   --primary-color: #ee0e43;
   --color-black: #000;
+  --color-white: #fff;
   --footer-bg-color: #1e1e1e;
 }
 
 a {
+  font-size: 1rem;
+  font-weight: 400;
   color: inherit;
   text-decoration: none;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -27,18 +41,37 @@ hgroup {
 
 /* White Color Styles */
 .drm-text-white {
-  color: white;
+  color: #fff;
 }
 
 .drm-bg-white {
-  background-color: #000;
+  background-color: #fff;
 }
 
 /* White Color Styles */
 .drm-text-black {
-  color: white;
+  color: #000;
 }
 
 .drm-bg-black {
   background-color: #000;
+}
+
+/* Positions */
+
+.p-sticky {
+  position: sticky;
+}
+
+.p-fixed {
+  position: fixed;
+}
+.p-relative {
+  position: relative;
+}
+
+.container-fluid {
+  padding: 0px;
+  max-width: 1500px;
+  background-color: var(--color-white);
 }
