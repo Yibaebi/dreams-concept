@@ -1,3 +1,7 @@
+.main_container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .main_container h3 {
   margin-bottom: 40px;
 }

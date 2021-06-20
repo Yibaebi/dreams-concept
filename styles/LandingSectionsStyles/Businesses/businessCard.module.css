@@ -1,0 +1,67 @@
+.main_container {
+  width: 392px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 2px 2px 14px 2px rgba(0, 0, 0, 0.1);
+  margin: 12px;
+}
+
+.title {
+  margin-top: 63px;
+  padding-left: 45px;
+  padding-right: 30px;
+}
+
+.title h3 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 131.69%;
+  color: #1e1e1e;
+  position: relative;
+}
+
+.title h3::after {
+  left: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 3.2px;
+  background: #ee0e43;
+}
+
+.image_container {
+  position: relative;
+}
+
+.image_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(30, 30, 30, 0.3);
+}
+
+.image_container > span {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+}
+
+.image_container > span span {
+  font-size: 20px;
+  line-height: 128.69%;
+  margin: 0px 5px;
+}

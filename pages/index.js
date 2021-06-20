@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import {
   HeroSection,
   ServiceSection,
   RecentProjects,
+  Businesses,
 } from "../components/LandingSections";
 
 import styles from "../styles/Home.module.css";
@@ -38,6 +38,7 @@ export default function Home() {
       <HeroSection />
       <ServiceSection />
       <RecentProjects />
+      <Businesses />
     </div>
   );
 }
