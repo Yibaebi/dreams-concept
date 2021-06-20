@@ -1,5 +1,6 @@
 .main_container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: var(--container-padding) !important;
   padding: 0px 114px;
