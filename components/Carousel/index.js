@@ -33,11 +33,8 @@ const Carousel = () => {
             }
           })}
           <aside className={`${carouselStyles.slide_intro}`}>
-            <h3>Road construction</h3>
-            <p>
-              Our expertise in road construction ensures solid roads which can
-              withstand harsh weather and climatic conditions.
-            </p>
+            <h3>{sliderData[currentSlide].title}</h3>
+            <p>{sliderData[currentSlide].description}</p>
           </aside>
           <aside
             className={`${carouselStyles.company_statement} d-flex flex-column justify-content-center`}
