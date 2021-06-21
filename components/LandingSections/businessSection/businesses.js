@@ -30,7 +30,7 @@ const Businesses = () => {
       <section
         className={`${businessStyles.main_container} d-flex align-items-center flex-column`}
       >
-        <h3>Recent Projects</h3>
+        <h3>Our Businesses</h3>
         <p>
           In addition to meeting your construction needs, we also offer other
           valueable services which are affordable and cost friendly.

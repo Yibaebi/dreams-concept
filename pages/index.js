@@ -5,6 +5,7 @@ import {
   ServiceSection,
   RecentProjects,
   Businesses,
+  AboutUs,
 } from "../components/LandingSections";
 
 import styles from "../styles/Home.module.css";

@@ -1,7 +1,3 @@
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import LeftArrow from "../../../public/images/LandingPage/left_arrow.svg";
 import AboutUsStyle from "../../../styles/LandingSectionsStyles/About/AboutUs.module.css";
 
@@ -13,11 +9,17 @@ function AboutUs() {
           <h5 className={`${AboutUsStyle.heading}`}>
             Providing durable construction works
           </h5>
-          <p style={{marginTop: "30PX"}} className={`${AboutUsStyle.summary}`}>
+          <p
+            style={{ marginTop: "30PX" }}
+            className={`${AboutUsStyle.summary}`}
+          >
             We are skilled and fully equipped with personnels, equipments and
             materials.
           </p>
-          <p style={{marginBottom: '40px'}} className={`${AboutUsStyle.summary}`}>
+          <p
+            style={{ marginBottom: "40px" }}
+            className={`${AboutUsStyle.summary}`}
+          >
             Our core business focus as a construction company is to provide
             local, valua-added services that meet the basic needs’ of our
             clients.

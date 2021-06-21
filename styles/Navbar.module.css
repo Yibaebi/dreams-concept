@@ -8,6 +8,7 @@
 
 .container__white {
   background-color: var(--color-white) !important;
+  border-bottom: 2px solid #e2e2e2;
 }
 
 .container__white .link__item a {

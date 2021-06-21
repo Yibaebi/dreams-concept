@@ -31,7 +31,7 @@ const RecentProjects = () => {
         <h3>Recent Projects</h3>
 
         <section
-          className={`container d-flex w-100 justify-content-even flex-wrap`}
+          className={`container d-flex w-100 justify-content-center flex-wrap`}
         >
           {PROJECTS.concat([...PROJECTS]).map(({ title, image }, index) => (
             <ProjectCard key={index} title={title} image={image} />
