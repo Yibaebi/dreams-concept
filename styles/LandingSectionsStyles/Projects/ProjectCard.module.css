@@ -19,3 +19,10 @@
   line-height: 128.69%;
   color: #1e1e1e;
 }
+
+@media screen and (max-width: 576px) {
+  .main_container {
+    width: unset;
+    max-width: 425px;
+  }
+}

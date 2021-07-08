@@ -17,7 +17,7 @@ const BUSINESSES = [
     tag: "Photography",
   },
   {
-    image: "/images/LandingPage/businesses/business_1.png",
+    image: "/images/LandingPage/businesses/business_2.png",
     title:
       "In addition to meeting your construction needs, we also offer other valueable services which are affordable and cost friendly.",
     tag: "Event Management",
