@@ -10,6 +10,20 @@ import carouselStyles from "../../styles/Carousel.module.css";
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    setCurrentSlide(0);
+    const interval = setInterval(changeSlide, 5000);
+    return () => clearInterval(interval);
+  }, [sliderData]);
+
+  const changeSlide = () => {
+    const lastIndex = sliderData.length - 1;
+    setCurrentSlide((currentSlide) => {
+      return currentSlide === lastIndex ? 0 : currentSlide + 1;
+    });
+  };
+
   return (
     <AnimatePresence>
       <section
@@ -26,6 +40,7 @@ const Carousel = () => {
                   className="image"
                   key={index}
                   layoutId="image"
+                  style={{ overflowX: "hidden" }}
                 >
                   <img src={`${slide.image}`} alt="dreams works" />
                 </motion.figure>
@@ -47,13 +62,13 @@ const Carousel = () => {
               {sliderData.map((item, index) => {
                 if (currentSlide === index) {
                   return (
-                    <motion.span onClick={() => setCurrentSlide(index)}>
+                    <motion.span>
                       <CurrentSlideIndicator />
                     </motion.span>
                   );
                 } else {
                   return (
-                    <motion.span onClick={() => setCurrentSlide(index)}>
+                    <motion.span>
                       <SlideIndicator />
                     </motion.span>
                   );

@@ -31,3 +31,39 @@
   font-size: 14px;
   font-weight: 400;
 }
+
+@media screen and (max-width: 831px) {
+  .main_container {
+    border-bottom: 2px solid #e2e2e2;
+  }
+  .content_wrapper {
+    width: 100%;
+    border-right: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .content_wrapper aside {
+    display: flex;
+    align-items: center;
+  }
+  .content_wrapper span {
+    margin-right: 18px;
+  }
+  .main_container {
+    background: #f3f3f3;
+    height: unset;
+    width: 90%;
+    display: flex;
+    padding: 19px 23px;
+  }
+
+  .content_wrapper p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 128.69%;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 19px;
+  }
+}

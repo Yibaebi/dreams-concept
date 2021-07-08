@@ -7,6 +7,7 @@ body {
 }
 
 :root {
+  display: flex;
   --container-padding: 28px 113px 28px 113px;
   --primary-color: #ee0e43;
   --color-black: #000;
@@ -27,6 +28,7 @@ p {
 
 ul {
   list-style-type: none;
+  margin-bottom: 0px;
 }
 
 * {

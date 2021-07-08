@@ -33,3 +33,22 @@
 .intro_card span:hover {
   padding-left: 10px;
 }
+
+@media screen and (max-width: 425px) {
+  .main_container {
+    padding: 20px 10px !important;
+  }
+  .intro_card {
+    height: unset;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 48px 18px;
+  }
+  .intro_card h3 {
+    margin-bottom: 0px;
+  }
+  .intro_card span {
+    display: none;
+  }
+}
