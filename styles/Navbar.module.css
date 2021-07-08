@@ -4,6 +4,8 @@
   top: 0px;
   transition: all 0.3s ease-in-out;
   background-color: transparent !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .container__white {
@@ -15,10 +17,9 @@
   color: var(--color-black);
 }
 
-.links__container {
+.links__wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 0px;
 }
 
 .link__item {
@@ -44,4 +45,99 @@
 .active__link a,
 .active__link a:hover {
   font-weight: 700;
+}
+
+.close__button {
+  display: none;
+}
+
+.ham__menu {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .ham__menu {
+    display: flex;
+  }
+
+  .ham__menu svg path {
+    fill: var(--color-white);
+  }
+
+  .container__white .ham__menu svg path {
+    fill: var(--color-black);
+  }
+
+  .container {
+    justify-content: space-between !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .links__container {
+    display: none;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .hamburger .links__wrapper {
+    height: 100vh;
+    padding-top: 150px;
+    padding-left: 50px;
+    width: 300px;
+    background-color: #080707;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 100;
+    -webkit-animation: slide 0.5s forwards;
+    animation: slide 0.5s forwards;
+  }
+
+  .hamburger .link__item {
+    justify-content: flex-start;
+    margin: 15px 0px;
+  }
+
+  .hamburger .link__item a:hover {
+    font-weight: normal;
+  }
+
+  .hamburger .link__item a,
+  .hamburger .link__item a {
+    color: var(--color-white);
+    font-weight: normal;
+    font-size: 17px;
+  }
+  .hamburger .active__link a,
+  .hamburger .active__link a:hover,
+  .hamburger .container__white .active__link a:hover {
+    font-weight: 700;
+    font-size: 25px;
+    color: #ee0e43;
+  }
+
+  .hamburger .close__button {
+    display: unset;
+    position: fixed;
+    top: 40px;
+    right: 35px;
+    cursor: pointer;
+  }
+}
+
+@keyframes slide {
+  0% {
+    right: -300px;
+  }
+  100% {
+    right: 0px;
+  }
 }
