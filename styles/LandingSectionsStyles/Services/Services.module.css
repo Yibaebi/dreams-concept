@@ -37,6 +37,7 @@
 @media screen and (max-width: 425px) {
   .main_container {
     padding: 20px 10px !important;
+    margin-top: 0px;
   }
   .intro_card {
     height: unset;

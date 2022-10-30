@@ -1,17 +1,17 @@
-import React from "react";
-import Link from "next/link";
+import Link from 'next/link'
+import React from 'react'
 
-import Facebook from "../../public/images/Footer/facebook.svg";
-import WhatsApp from "../../public/images/Footer/whatsapp.svg";
-import Instagram from "../../public/images/Footer/instagram.svg";
-import Twitter from "../../public/images/Footer/twitter.svg";
-import WhiteLogoVariant from "../../public/images/white-logo-variant.svg";
+import Facebook from '../../public/images/Footer/facebook.svg'
+import Instagram from '../../public/images/Footer/instagram.svg'
+import Twitter from '../../public/images/Footer/twitter.svg'
+import WhatsApp from '../../public/images/Footer/whatsapp.svg'
+import WhiteLogoVariant from '../../public/images/white-logo-variant.svg'
 
-import footerStyles from "../../styles/Footer/Footer.module.css";
+import footerStyles from '../../styles/Footer/Footer.module.css'
 
 const Footer = () => {
   return (
-    <section className={`${footerStyles.main_container}`}>
+    <section className={`${footerStyles.main_container}`} id="contact">
       <div>
         <aside className={`${footerStyles.link_container}`}>
           <h3>Company</h3>
@@ -69,7 +69,7 @@ const Footer = () => {
       </div>
       <WhiteLogoVariant />
     </section>
-  );
-};
+  )
+}
 
-export { Footer };
+export { Footer }

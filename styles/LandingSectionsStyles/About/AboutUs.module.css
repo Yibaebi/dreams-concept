@@ -1,8 +1,7 @@
 .aboutUs {
   height: 90vh;
-  background-color: aquamarine;
-  background: url("../../../public//images/LandingPage/aboutus.png") no-repeat
-    center;
+  max-height: 549px;
+  background: url('../../../public//images/LandingPage/aboutus.png') no-repeat center;
   background-size: cover;
   padding: 0px;
   display: flex;
